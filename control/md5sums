@@ -14,6 +14,6 @@ ee8004b6d678854913dd093e3ac76d0f  usr/share/doc/tinc/NEWS.gz
 95064fb300f93d7a537d391900cef229  usr/share/man/man5/tinc.conf.5.gz
 356bb9c5d47f0a3bb3fdff14fd930c8b  usr/share/man/man8/tincd.8.gz
 cce64b5ce8dec199dba51b3c1549dcaa  usr/share/doc-base/tinc
-fa0e2f872febda93876eb3b49172b5e3  etc/init.d/tinc
+1ec460b4edc52b7f6e79ee4780e84d66  etc/init/tinc.conf
 1664499c08334cc2eb8a1341c2d92e85  etc/dbus-scripts.d/tinc-maemo.dbus
 68303489ce39de60909e25c8020a57c6  etc/default/tinc

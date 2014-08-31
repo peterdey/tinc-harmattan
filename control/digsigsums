@@ -1,6 +1,5 @@
-S 15 com.nokia.maemo H 40 d2c3e1df7fdfc0c67385a458ac1d4a19f3d446fc R 31 var/lib/dpkg/info/tinc.postinst
+S 15 com.nokia.maemo H 40 3cb5d06a91cbf88d36bb3ba2961751ff49991555 R 31 var/lib/dpkg/info/tinc.postinst
 S 15 com.nokia.maemo H 40 f07877b2960ae62f20afa6d579c24ee00bc8c520 R 29 var/lib/dpkg/info/tinc.postrm
-S 15 com.nokia.maemo H 40 7b67e10c264c79cc4da145b5788d7bc661918783 R 28 var/lib/dpkg/info/tinc.prerm
-S 15 com.nokia.maemo H 40 b5c038e0671d0f62e4307c8fb0d3586fb4a542f7 R 14 usr/sbin/tincd
+S 15 com.nokia.maemo H 40 2fd5f9aa34d908d25555775a87c5c3bcd22bffe9 R 28 var/lib/dpkg/info/tinc.prerm
 S 15 com.nokia.maemo H 40 46e960bf401f74e35cbb7c439bd861942104c364 R 19 usr/sbin/tinc-maemo
-
+S 15 com.nokia.maemo H 40 b5c038e0671d0f62e4307c8fb0d3586fb4a542f7 R 14 usr/sbin/tincd
