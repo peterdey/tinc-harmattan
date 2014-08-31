@@ -1,0 +1,9 @@
+<aegis>
+	<request policy="add">
+		<credential name="CAP::net_bind_service" />
+		<credential name="CAP::net_broadcast" />
+		<credential name="CAP::net_admin" />
+		<credential name="CAP::net_raw" />
+		<for path="/usr/sbin/tincd" />
+	</request>
+</aegis>
