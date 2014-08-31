@@ -1,0 +1,13 @@
+Package: tinc
+Version: 1.0.5-1maemo1
+Section: net
+Priority: optional
+Architecture: armel
+Depends: debconf | debconf-2.0, dbus-scripts, libc6 (>= 2.3.5-1), liblzo2-2, libssl0.9.7, zlib1g (>= 1:1.2.1)
+Installed-Size: 400
+Maintainer: Guus Sliepen <guus@debian.org>
+Description: Virtual Private Network daemon
+ tinc is a daemon with which you can create a virtual private network
+ (VPN).  One daemon can handle multiple connections, so you can
+ create an entire (moderately sized) VPN with only one daemon per
+ participating computer.

@@ -1,0 +1,72 @@
+Template: tinc/restart_on_upgrade
+Type: boolean
+Default: true
+Description: Restart tinc on each upgrade?
+ You may choose if you want me to restart the tinc daemon every time you
+ install a new version of this package.
+ .
+ Sometimes you don't want to do this, for example if you are doing the
+ upgrade over a tunnel that is created with tinc.  Stopping the daemon
+ would probably leave you with a dead connection, and tinc may not be
+ started again.
+ .
+ If you refuse, you have to restart tinc yourself if you upgraded, by
+ typing `invoke-rc.d tinc restart' whenever it suits you.
+Description-cs.ISO-8859-2: Restartovat tinc pøi ka¾dé aktualizaci?
+ Mù¾ete zvolit, zda restartovat tinc daemona poka¾dé, kdy¾ je instalována
+ nová verze tohoto balíèku.
+ .
+ Nìkdy tuto mo¾nost nepotøebujete, napøíklad pokud provádíte aktualizaci
+ pøes tunel, kterı je vytvoøen pomocí tinc. Zastavení tohoto daemona vám
+ pravdìpodobnì zanechá "mrtvé pøipojení" a navíc se tinc nemusí znovu
+ spustit.
+ .
+ Pokud zamítnete, musíte po aktualizaci restartovat tinc ruènì, zadáním
+ pøíkazu `invoke-rc.d tinc restart' kdykoliv se vám to hodí.
+Description-fr.ISO-8859-15: Faut-il redémarrer tinc à chaque mise à jour ?
+ Vous pouvez choisir de redémarrer le démon tinc à chaque fois que vous
+ installez une nouvelle version de ce paquet.
+ .
+ Dans certains cas, vous devrez éviter de le faire, par exemple si vous
+ mettez à jour à travers un tunnel créé avec tinc. Arrêter le démon
+ laisserait sans doute une connexion inactive et tinc ne pourrait pas être
+ redémarré.
+ .
+ Si vous refusez cette option, vous devrez redémarrer tinc vous-même en cas
+ de mise à jour, avec la commande : « invoke-rc.d tinc restart », au moment
+ où cela vous conviendra.
+Description-nl.ISO-8859-15: Start tinc opnieuw na iedere upgrade?
+ Je kunt kiezen of ik de tinc daemon opnieuw moet starten iedere keer als
+ je een nieuwe versie van het pakket installeert.
+ .
+ Soms wil je dit niet doen, bij voorbeeld als je de upgrade uitvoert over
+ een tunnel die met tinc is gemaakt.  Het stoppen van tinc resulteert dan
+ waarschijnlijk is een dode verbinding, en tinc wordt dan misschien niet
+ opnieuw gestart.
+ .
+ Als je weigert, moet je zelf tinc opnieuw starten na een upgrade,
+ door`invoke-rc.d tinc restart' in te tiepen wanneer het goed uitkomt.
+Description-sv.ISO-8859-1: Starta om tinc vid varje uppgradering?
+ Du kan välja om du vill att jag startar om tinc-daemonen varje gång du
+ installerar en ny version av detta paket.
+ .
+ Ibland vill du kanske inte göra detta, till exempel om du gör en
+ uppgradering via en tunnel som är skapad med tinc.  Stoppa daemonen skulle
+ antagligen koppla ner förbindelsen och tinc kan inte startas igen.
+ .
+ Om du vägrar måste du starta om tinc själv om du uppgraderat, genom att
+ skriva 'invoke-rc.d tinc restart' när det passar dig.
+Description-vi.utf-8: Khá»Ÿi cháº¡y láº¡i trÃ¬nh tinc má»—i láº§n nÃ¢ng cáº¥p khÃ´ng?
+ Táº¡i Ä‘Ã¢y báº¡n cÃ³ thá»ƒ chá»n tá»± Ä‘á»™ng khá»Ÿi cháº¡y láº¡i trÃ¬nh
+ ná»n (dÃ¦mon) tinc má»—i láº§n báº¡n cÃ i Ä‘áº·t phiÃªn báº£n má»›i cá»§a
+ gÃ³i nÃ y hay khÃ´ng.
+ .
+ ÄÃ´i khi báº¡n khÃ´ng muá»‘n lÃ m nhÆ° tháº¿, láº¥y thÃ­ dá»¥ náº¿u báº¡n
+ Ä‘ang nÃ¢ng cáº¥p qua Ä‘Æ°á»ng háº§m mÃ  tinc táº¡o. Trong trÆ°á»ng
+ há»£p nÃ y, ngá»«ng trÃ¬nh ná»n ráº¥t cÃ³ thá»ƒ sáº½ ngáº¯t káº¿t ná»‘i,
+ vÃ  cÃ³ láº½ tinc sáº½ khÃ´ng khá»Ÿi cháº¡y láº¡i.
+ .
+ Náº¿u báº¡n tá»« chá»‘i thÃ¬ báº¡n cáº§n pháº£i tá»± khá»Ÿi cháº¡y láº¡i
+ trÃ¬nh tinc má»—i láº§n nÃ¢ng cáº¥p, báº±ng cÃ¡ch gÃµ lá»‡nh Â«
+ invoke-rc.d tinc restart Â» (gá»i-rc.d tinc khá»Ÿi cháº¡y láº¡i) khi
+ thÃ­ch há»£p.

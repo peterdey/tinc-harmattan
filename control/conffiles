@@ -1,0 +1,3 @@
+/etc/init.d/tinc
+/etc/dbus-scripts.d/tinc-maemo.dbus
+/etc/default/tinc

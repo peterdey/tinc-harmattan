@@ -1,0 +1,2 @@
+# Invoke tinc start/stop script in WLAN state changes
+/usr/sbin/tinc-maemo * * com.nokia.icd status_changed * WLAN_INFRA

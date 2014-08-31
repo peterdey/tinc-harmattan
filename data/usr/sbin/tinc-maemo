@@ -1,0 +1,67 @@
+#! /bin/sh
+#
+# This script is invoked by dbus-scripts when a WLAN connection changes
+# state.
+#
+# The script looks for the file /etc/tinc/nets.WLAN.<connection>.
+# If it can't find it, it looks for the file /etc/tinc/nets.WLAN-default.
+# If it can't find that, it does nothing.
+#
+# If a nets file has been found, it should contain the names of tincd networks
+# (valid directory names under /etc/tinc).  Lines starting with # are ignored.
+#
+# If the connection has come up, tincd is started for those networks.
+# If the connection has gone down, tincd is stopped for those networks.
+#
+
+DAEMON="/usr/sbin/tincd"
+NAME="tinc"
+DESC="tinc daemons"
+TCONF="/etc/tinc"
+NETSFILEBASE="$TCONF/nets.WLAN"
+DEFAULTNETSFILE=${NETSFILEBASE}-default
+NETS=""
+
+test -f $DAEMON || exit 0
+
+[ -r /etc/default/tinc ] && . /etc/default/tinc
+
+find_nets () {
+  netsfile="$NETSFILEBASE.$CONN"
+  if [ ! -f "$netsfile" ]
+  then
+      netsfile="$NETSFILEBASE-default"
+  fi
+  if [ ! -f "$netsfile" ]
+  then
+      echo "No nets file found for connection $CONN"
+      exit 0
+  fi
+  NETS="`egrep '^[ ]*[a-zA-Z0-9_-]+[ ]*$' \"$netsfile\"`"
+}
+
+# Connection name
+CONN=$5
+
+case "$7" in
+  CONNECTED)
+    find_nets
+    echo -n "Starting $DESC:"
+    for n in $NETS ; do
+      echo -n " $n"
+      $DAEMON -n $n $EXTRA
+    done
+    echo "."
+  ;;
+  IDLE)
+    find_nets
+    echo -n "Stopping $DESC:"
+    for n in $NETS ; do
+      echo -n " $n"
+      $DAEMON -n $n $EXTRA -k
+    done
+    echo "."
+  ;;
+esac
+
+exit 0
