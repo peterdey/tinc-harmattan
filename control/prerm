@@ -21,9 +21,3 @@ if [ "$1" = remove ] || [ "$1" = upgrade ] && \
 	install-docs -r tinc
 fi
 # End automatically added section
-# Automatically added by dh_installinfo
-if [ "$1" = remove ] || [ "$1" = upgrade ]; then
-	install-info --quiet --remove /usr/share/info/tinc.info
-fi
-# End automatically added section
-

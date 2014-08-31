@@ -88,12 +88,6 @@ if [ "$1" = configure ] && which install-docs >/dev/null 2>&1; then
 	install-docs -i /usr/share/doc-base/tinc
 fi
 # End automatically added section
-# Automatically added by dh_installinfo
-if [ "$1" = "configure" ]; then
-	install-info --quiet --section "Networking tools" "Networking tools" /usr/share/info/tinc.info
-fi
-# End automatically added section
-
 
 exit 0
 
